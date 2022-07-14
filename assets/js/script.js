@@ -91,7 +91,7 @@ Consultorio.prototype.agregarPaciente = function (paciente) {
 //Método de búsqueda por nombre
 Consultorio.prototype.buscarPacientePorNombre = function(busquedaNombre){
     this._paciente().forEach(function(element, index){
-        if (element._nombrePaciente == busquedaNombre){
+        if (element._nombrePaciente() == busquedaNombre){
             console.log(`Paciente: ${element._nombrePaciente()}`)
             console.log(`Edad: ${element._edad()}`)
             console.log(`RUT: ${element._rut()}`)
